@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptPhone", "AcceptPhone\AcceptPhone.csproj", "{32749940-1F51-4E13-885D-E375A988955D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptPhone", "AcceptPhone_Editar\AcceptPhone\AcceptPhone.csproj", "{32749940-1F51-4E13-885D-E375A988955D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
