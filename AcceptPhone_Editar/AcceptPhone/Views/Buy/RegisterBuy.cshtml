@@ -1,0 +1,261 @@
+﻿@model AcceptPhone.Models.RegisterBuyViewModel
+@{
+    ViewBag.Title = "RegistrarCompra";
+}
+
+@using (Html.BeginForm("RegisterBuy", "Buy", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    <head>
+
+        <title>Registrar Compra - Tienda de Celulares ACCEPTFONE</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+   
+           /* Estilos generales del cuerpo y la página */
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: linear-gradient(135deg, #FFD700, #FF4500);
+                font-family: 'Arial', sans-serif;
+                color: #000;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px; /* Agrega espacio alrededor del contenido */
+            }
+
+            .navbar ul {
+                list-style: none;
+                display: flex;
+            }
+
+            .navbar li {
+                margin-right: 20px;
+                transition: all 0.3s; /* Agrega una transición suave */
+            }
+
+                .navbar li a {
+                    text-decoration: none;
+                    color: #333; /* Cambia el color de texto a un tono más oscuro */
+                    font-size: 18px;
+                    transition: color 0.3s; /* Cambia el color de texto con una transición */
+                }
+
+                    .navbar li a:hover {
+                        color: #007bff; /* Cambia el color de texto al pasar el cursor */
+                    }
+
+            h1 {
+                text-align: center;
+                font-size: 36px;
+                margin: 20px 0; /* Agregamos margen superior e inferior */
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background: rgba(322, 255, 249, 0.6); /* Fondo en negro con una opacidad del 90% */
+                color: #000;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                margin-top: 100px;
+            }
+
+
+
+
+            .form-group {
+                margin: 10px 0;
+                text-align: left;
+            }
+
+                .form-group label {
+                    display: block;
+                    font-size: 18px;
+                    color: #FF4500; /* Cambia el color de las etiquetas a naranja oscuro */
+                }
+
+                .form-group input {
+                    width: 100%;
+                    padding: 10px;
+                    border: 2px solid #FF4500; /* Cambia el borde de los campos de entrada a naranja oscuro */
+                    border-radius: 5px;
+                    font-size: 16px;
+                    background-color: #FFF8DC; /* Cambia el fondo de los campos de entrada a un amarillo claro */
+                }
+
+            .btn {
+                display: inline-block;
+                background-color: #FF4500; /* Cambia el color del botón a naranja oscuro */
+                border: none;
+                color: #fff;
+                font-size: 24px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+                cursor: pointer; /* Cambia el cursor al pasar el botón */
+            }
+
+                .btn:hover {
+                    background-color: #FF6347; /* Cambia el color del botón al pasar el cursor */
+                }
+        </style>
+    </head>
+    <body>
+
+
+    </body>
+
+    //Html.AntiForgeryToken();
+    <div class="login-container">
+        <div class="form-group">
+            <div style="border: 2px solid ; padding: 10px; border-radius: 5px; background-color:">
+                <h2 class="text-center">Registrar Datos De Compra</h2>
+            </div>
+            <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+
+            @Html.LabelFor(model => model.Nombre, "Nombre", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control", pattern = "^[A-Za-z\\s]*$", title = "Solo letras y espacios son permitidos" } })
+                <span class="field-validation-message" id="nombreError"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telefono, "Telefono ", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control", type = "tel", pattern = "^[0-9]{10}$", title = "Debe contener 10 números" } })
+                <span class="field-validation-message" id="telefonoError"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cedula, "Numero de Cedula o (cc Extranjera)", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Cedula, new { htmlAttributes = new { @class = "form-control", type = "tel", pattern = "^[0-9]{9,10}$", title = "Debe contener 9 o 10 números" } })
+                <span class="field-validation-message" id="cedulaError"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, "Correo electronico", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", type = "email" } })
+                <span class="field-validation-message" id="emailError"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tipopago, "Pago de Tarjeta (Debito o credito)", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tipopago, new { htmlAttributes = new { @class = "form-control" } })
+                <span class="field-validation-message" id="tipopagoError"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tarjeta, "Ingrese el numero de su tarjeta sin puntos ni comas", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tarjeta, new { htmlAttributes = new { @class = "form-control", type = "tel" } })
+                <span class="field-validation-message" id="tarjetaError"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-primary" id="registrarButton">REGISTRAR COMPRA</button>
+            </div>
+        </div>
+    </div>
+}
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        document.getElementById('registrarButton').addEventListener('click', function () {
+            var nombre = $('#Nombre').val();
+            var telefono = $('#Telefono').val();
+            var cedula = $('#Cedula').val();
+            var email = $('#Email').val();
+            var tipopago = $('#Tipopago ').val();
+            var tarjeta = $('#Tarjeta').val();
+            var emailRegex = /[a-z0-9._%+-]+[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+            // Limpiar mensajes de error
+            $('.field-validation-message').text('');
+
+            if (nombre === '' || telefono === '' || cedula === '' || email === '' || tipopago === '' || tarjeta === '') {
+                $('#nombreError').text("(Por favor, ingrese un nombre real )");
+            } else if (!/^[A-Za-z\s]*$/.test(nombre)) {
+                $('#nombreError').text('(En el campo "NOMBRE" Solo letras y espacios son permitidos.)');
+            }
+
+            if (telefono === '') {
+                $('#telefonoError').text('(Por favor, ingrese un numero de 10 digitos.)');
+            } else if (!/^[0-9]{10}$/.test(telefono)) {
+                $('#telefonoError').text('(En el campo "TELEFONO" Debe contener 10 números.)');
+            }
+
+            if (cedula === '') {
+                $('#cedulaError').text('(Por favor, escriba un documento valido de 10 digitos .');
+            } else if (!/^[0-9]{10}$/.test(cedula)) {
+                $('#cedulaError').text('(El campo "CEDULA" Debe contener  10 números.');
+            }
+
+            if (email === '') {
+                $('#emailError').text('(Por favor, ingrese un correo valido.)');
+            } else if (!emailRegex.test(email)) {
+                $('#emailError').text('(En el campo "EMAIL" Ingrese una dirección de correo válida)');
+            }
+
+            if (tipopago === '') {
+                $('#tipopagoError').text('(El campo "TIPO DE PAGO" Especifique tarjeta debito o credito)');
+            }
+
+            if (tarjeta === '') {
+                $('#tarjetaError').text('(Por favor, complete este campo con su tarjeta debito o credito).');
+            } else if (!/^[0-9]{16}$/.test(tarjeta)) {
+                $('#tarjetaError').text('El campo "TARJETA" Debe contener 16 números.');
+            }
+
+            // Realizar otras validaciones si es necesario
+
+            // Comprobar si hay mensajes de error
+            if ($('.field-validation-message').text() === '') {
+                mostrarConfirmacion();
+            }
+        });
+        function mostrarError(mensaje) {
+            Swal.fire({
+                title: 'Error',
+                text: 'mensaje',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        function mostrarConfirmacion() {
+            Swal.fire({
+                title: 'Confirmación',
+                text: '¿Está seguro de tratar datos personales al correo especificado, aceptar y continuar la compra?',
+                type: 'ATENCION',
+                showCancelButton: true,
+                confirmButtonText: 'Aceptar y Continuar',
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+            }).then((result) => {
+                if (result.value) {
+                    $("form").submit();
+                }
+            });
+        }
+    </script>
+}

@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+        /* Estilos generales del cuerpo y la página */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FFD700, #FF4500); /* Establece un fondo con degradado */
+            font-family: 'Arial', sans-serif; /* Define la fuente de texto */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(322, 255, 249, 0.6); /* Fondo en negro con una opacidad del 90% */
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+        }
+        /* Estilos para los grupos de formularios */
+        .form-group {
+            margin: 10px 0; /* Agrega espacio entre los grupos de formularios */
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+
+            /* Estilos para las etiquetas de formulario */
+            .form-group label {
+                display: block; /* Muestra las etiquetas en un bloque separado */
+                font-size: 18px; /* Establece el tamaño de fuente */
+                color: #000; /* Cambia el color de las etiquetas a negro */
+            }
+
+            /* Estilos para los campos de entrada de formulario */
+            .form-group input {
+                width: 100%; /* Los campos de entrada ocupan el ancho completo */
+                padding: 10px; /* Agrega relleno interno */
+                border: 2px solid #FF4500; /* Cambia el borde de los campos de entrada a naranja oscuro */
+                border-radius: 5px; /* Agrega bordes redondeados a los campos de entrada */
+                font-size: 16px; /* Establece el tamaño de fuente */
+                background-color: #FFD700; /* Cambia el fondo de los campos de entrada a amarillo claro */
+                color: #000; /* Cambia el color del texto a negro */
+            }
+
+        /* Estilos para los botones */
+        .btn {
+            display: inline-block; /* Hace que los botones sean elementos en línea */
+            background-color: #FF4500; /* Cambia el color de fondo de los botones a naranja oscuro */
+            border: none; /* Quita el borde de los botones */
+            color: #fff; /* Establece el color del texto en los botones a blanco */
+            font-size: 24px; /* Establece el tamaño de fuente en los botones */
+            padding: 10px 20px; /* Agrega relleno interno en los botones */
+            border-radius: 5px; /* Agrega bordes redondeados a los botones */
+            text-decoration: none; /* Quita la decoración de texto subrayado en los botones */
+            transition: background-color 0.3s; /* Agrega una transición al color de fondo de los botones al pasar el cursor */
+            cursor: pointer; /* Cambia el cursor al pasar por encima de los botones */
+        }
+
+            /* Estilos para los botones al pasar el cursor */
+            .btn:hover {
+                background-color: #FF6347; /* Cambia el color de fondo de los botones a un tono más oscuro al pasar el cursor */
+            }
+    </style>
+</head>
+@model AcceptPhone.Models.LoginViewModel
+@using System.Web.Mvc
+
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+    <h2>Login</h2>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary" onclick="mostrarAlerta()">INICIAR SESION</button>
+        </div>
+    </div>
+    <script>
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <text>
+        document.addEventListener("DOMContentLoaded", function() {
+            var errorMessage = "@TempData["ErrorMessage"]";
+            if (errorMessage) {
+                var errorDiv = document.createElement("div");
+                errorDiv.className = "alert alert-danger";
+                errorDiv.textContent = errorMessage;
+
+                var formGroup = document.querySelector(".form-group");
+                formGroup.parentNode.insertBefore(errorDiv, formGroup);
+            }
+        });
+        </text>
+    }
+    </script>
+}

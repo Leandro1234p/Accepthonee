@@ -1,0 +1,81 @@
+﻿body {
+    background-color: #ccc;
+}
+
+.buy {
+    background-color: #ff6c4f; /* Cambia el color de fondo a naranja */
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 10px; /* Agrega espacio interno alrededor del elemento */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 18px; /* Cambia el tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+}
+
+    .buy:hover {
+        background-color: #e2573e; /* Cambia el color de fondo al pasar el cursor */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+    }
+
+.product-details {
+    display: none;
+}
+
+.show-details {
+    display: block;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+    transition: all 0.3s; /* Agrega una transición suave */
+}
+
+    .navbar li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s; /* Cambia el color de texto con una transición */
+    }
+
+        .navbar li a:hover {
+            color: #007bff; /* Cambia el color de texto al pasar el cursor */
+        }
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px; /* Reduce un poco el padding */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Cambia el color de fondo con una transición */
+}
+
+    .btn:hover {
+        background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+    }
+.producto, .oferta {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s; /* Agrega una animación a la sombra */
+}
+
+    .producto:hover, .oferta:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el cursor */
+    }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px; /* Cambia el tamaño del texto */
+}

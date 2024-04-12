@@ -1,0 +1,286 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Empresa de Venta Digital</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+    <script>
+        @if (ViewBag.SuccessMessage != null)
+        {
+            <text>showSuccessMessage("@ViewBag.SuccessMessage");</text>
+        }
+
+        // Define la función showSuccessMessage
+        function showSuccessMessage(message) {
+            var messageDiv = document.getElementById("message");
+            messageDiv.style.display = "block";
+            messageDiv.style.color = "blue"; // Cambia el color a verde o el que desees
+            messageDiv.innerText = message;
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #6200ea, #00c853);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        .form-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 18px;
+                color: #e65100; /* Naranja oscuro para etiquetas */
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid #e65100;
+                border-radius: 8px;
+                font-size: 16px;
+                background-color: #fff3e0; /* Amarillo claro para el fondo de los campos de entrada */
+                color: #333; /* Color de texto para los campos de entrada */
+            }
+
+        .btn {
+            display: inline-block;
+            background-color: #e65100;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #ff7043;
+            }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+            .navbar h1 {
+                color: #ccc;
+            }
+
+            .navbar ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+            }
+
+            .navbar li {
+                margin-right: 20px;
+                transition: all 0.3s;
+            }
+
+                .navbar li a, .navbar h1 {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 18px;
+                    transition: color 0.3s;
+                }
+
+                    .navbar li a:hover {
+                        color: #00c853;
+                    }
+
+        .banner {
+            text-align: center;
+            margin-top: 50px;
+            color: #e65100;
+        }
+
+            .banner h1 {
+                font-size: 48px;
+                color: #00c853;
+                margin-bottom: 20px;
+            }
+
+        .sub-header {
+            font-size: 24px;
+            color: #e65100;
+        }
+
+        .btn-shop {
+            background-color: #00c853;
+            border-color: #00c853;
+            color: #fff;
+            font-size: 24px;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 15px 20px;
+            transition: background-color 0.3s;
+        }
+
+            .btn-shop:hover {
+                background-color: #64dd17;
+                border-color: #64dd17;
+            }
+
+        .btn-up {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .phones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .phone {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+            .phone:hover {
+                transform: scale(1.05);
+            }
+
+            .phone img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .phone h3 {
+                font-size: 24px;
+                color: #00c853;
+                margin-top: 15px;
+            }
+
+            .phone p {
+                font-size: 16px;
+                color: #555;
+            }
+
+            .phone .btn-view {
+                background-color: #00c853;
+                border-color: #00c853;
+                color: #fff;
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 15px 0;
+                display: block;
+                transition: background-color 0.3s;
+            }
+
+                .phone .btn-view:hover {
+                    background-color: #64dd17;
+                    border-color: #64dd17;
+                }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-contacto">
+        <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+        <h1>NO OLVIDES QUE...</h1>
+        <p>¡Estamos aquí para ayudarte! Ponte en contacto con nosotros para cualquier consulta o asistencia.</p>
+    </header>
+
+    <section class="contacto">
+        <div class="container">
+            <div class="contacto">
+                <h2>¿DUDAS O SUGERENCIAS?</h2>
+                <p>¿Tienes preguntas o comentarios sobre nuestros servicios? ¡Escríbenos! Te responderemos muy pronto.</p>
+
+                <!-- Formulario de contacto -->
+                @using (Html.BeginForm("RegisterComent", "Coment", FormMethod.Post))
+                {
+                    //Html.AntiForgeryToken();
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Comentario</button>
+                    <div id="message" style="display: none;"></div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section class="informacion-contacto">
+        <h2>Información de la empresa</h2>
+        <p>
+            Somos tu destino para la última tecnología móvil. En AcceptPhone,
+            nos apasiona conectar a las personas con los dispositivos más avanzados y las mejores ofertas en teléfonos inteligentes.
+            Ofrecemos una amplia gama de marcas y modelos, desde los últimos lanzamientos hasta opciones asequibles.
+            Nuestra misión es proporcionarte la mejor experiencia en compras de dispositivos móviles, respaldada por un excelente
+            servicio al cliente. ¡Descubre la innovación en tus manos con AcceptPhone
+        </p>
+        <p>Puedes contactarnos a través de los siguientes medios:</p>
+        <ul>
+            <li>Teléfono: +57 313 556 0587</li>
+            <li>Correo Electrónico: AcceptfPhone</li>
+            <li>Dirección: Calle Principal #1, Bogotá, Colombia</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AcceptfPhone. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

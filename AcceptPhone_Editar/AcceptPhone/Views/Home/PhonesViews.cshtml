@@ -1,0 +1,432 @@
+﻿@{
+    ViewBag.Title = "Views";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Celulares</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+    <!-- Script para mostrar/ocultar los detalles de un producto -->
+    <script>
+        function toggleDetails(productName) {
+            var details = document.getElementById(productName + "-details");
+            details.classList.toggle("show-details");
+        }
+    </script>
+
+    <style>
+        .banner h2,
+        .banner p {
+            color: #000;
+            /* Cambia el color actual (#fff) a negro (#000) o tu preferencia */
+        }
+
+        body {
+            background: linear-gradient(135deg, #6200ea, #00c853);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            color: #ccc;
+        }
+
+            .container h2 {
+                color: #000;
+                /* Cambia el color actual (#ccc) a negro (#000) o tu preferencia */
+            }
+
+        .form-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 18px;
+                color: #e65100;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid #e65100;
+                border-radius: 8px;
+                font-size: 16px;
+                background-color: #fff3e0;
+                color: #333;
+            }
+
+        .btn {
+            display: inline-block;
+            background-color: #e65100;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #ff7043;
+            }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 10px;
+        }
+
+            .navbar h1 {
+                color: #ccc;
+            }
+
+            .navbar ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+            }
+
+            .navbar li {
+                margin-right: 20px;
+                transition: all 0.3s;
+            }
+
+                .navbar li a,
+                .navbar h1 {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 18px;
+                    transition: color 0.3s;
+                }
+
+                    .navbar li a:hover {
+                        color: #00c853;
+                    }
+
+        .oferta h2 {
+            color: #000;
+            /* Cambia el color actual (#fff) a negro (#000) o tu preferencia */
+        }
+
+        .btn-shop {
+            background-color: #00c853;
+            border-color: #00c853;
+            color: #fff;
+            font-size: 24px;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 15px 20px;
+            transition: background-color 0.3s;
+            display: block;
+            text-align: center; /* Alineación centrada */
+        }
+
+            .btn-shop:hover {
+                background-color: #64dd17;
+                border-color: #64dd17;
+            }
+
+        .btn-up {
+            display: block;
+            text-align: center;
+            margin-top: 10px; /* Ajuste de margen superior */
+        }
+
+        .phones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .phone {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+            .phone:hover {
+                transform: scale(1.05);
+            }
+
+            .phone img {
+                max-width: 300px; /* Ajuste de tamaño de imagen */
+                height: 300px; /* Ajuste de tamaño de imagen */
+                border-radius: 10px;
+            }
+
+            .phone h3 {
+                font-size: 24px;
+                color: #00c853;
+                margin-top: 15px;
+            }
+
+            .phone p {
+                font-size: 16px;
+                color: #555;
+            }
+
+            .phone .btn-view {
+                background-color: #00c853;
+                border-color: #00c853;
+                color: #fff;
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 15px 0;
+                display: block;
+                transition: background-color 0.3s;
+            }
+
+                .phone .btn-view:hover {
+                    background-color: #64dd17;
+                    border-color: #64dd17;
+                }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .producto {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+            /* Agrega un margen inferior para separar los productos */
+        }
+
+            .producto h3,
+            .producto p {
+                color: #000;
+                /* Cambia el color actual (#555) a negro (#000) o tu preferencia */
+            }
+
+        .product-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .show-details {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <h1>Tienda de Celulares AcceptfPhone</h1>
+                <div class="goto-box">
+                    <a href="@Url.Action("Index", "Home")">Inicio</a>
+                </div>
+            </div>
+        </div>
+        <div class="container banner">
+            <h2>¡Encuentra el celular perfecto para ti!</h2>
+            <p>Explora nuestra selección de los últimos modelos de smartphones. ¡NO TE QUEDES SIN EL TUYO!.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>CELULARES DISPONIBLES Y DETALLES</h2>
+
+        <div class="productos">
+            <div class="producto">
+                <img src="~/Images/Iphone.jpg" alt="Iphone" width="300" height="300">
+                <h3>Iphone 14 pro max</h3>
+                <p>Lleva hoy este nuevo equipo</p>
+                <p>Precio: $8,200,000</p>
+
+                <a href="@Url.Action("RegisterBuy", "Buy")" class="btn btn-primary">COMPRAR AHORA</a>
+
+                <p>
+                    ¡¡¡DATOS DEL CELULAR!!!
+                    Chip A15 Bionic GPU 5núcleos rendimiento fuera de serie
+                    Modo Cine 4K Dolby Vision de hasta 30cps
+                    Modo Acción para lograr videos estables
+                    Detección de Choques, funcionalidad de seguridad
+                    Ceramic Shield y resistencia al agua
+                </p>
+                <p>
+                    El iPhone 14 viene con el sistema de dos cámaras, para que tomes fotos espectaculares con mucha o poca luz.
+                    Y te da más tranquilidad gracias a una funcionalidad de seguridad que salva vidas.
+                </p>
+                <div id="iphone-details" class="product-details">
+                    <!-- Contenido de los detalles del producto -->
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="~/Images/Samsung.jpg" alt="Samsung" width="300" height="300">
+                <h3>Samsung</h3>
+                <p>Lleva hoy este nuevo equipo</p>
+                <p>Precio: $5,200,000</p>
+
+                <a href="@Url.Action("RegisterBuy", "Buy")" class="btn btn-primary">COMPRAR AHORA</a>
+
+                <p>
+                    ¡¡¡DATOS DEL CELULAR!!!
+                    Rodéate de sonido
+                    Una forma superior de escuchar. El audio envolvente Dolby Atmos permite que el Galaxy A34 5G convierta tus canciones,
+                    llamadas y contenido de video en experiencias de audio puras. Hazlo en un instante. Con la tecnología de un procesador
+                    de ocho núcleos y conectado en 5G, el Galaxy A34 5G inspira al máximo tu rendimiento en el trabajo o el juego. Mantén la
+                    capacidad con más espacio usando una memoria de 6 GB y almacenamiento de 128 GB, además de compatibilidad con una tarjeta
+                    microSD de hasta 1 Durabilidad para adentrarse en lo salvaje. La clasificación IP67 del Galaxy A34 5G certifica su resistencia
+                    al polvo y el agua para disfrutar de más aventuras.
+                </p>
+                <p>
+
+                    Simple y elegante
+                    Enmarcado en líneas simples con acabado en Glastic, el Galaxy A34 5G está disponible muy modernos pero atemporales .
+                </p>
+                <div id="samsung-details" class="product-details">
+                    <!-- Contenido de los detalles del producto -->
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="~/Images/Galaxy-S23.jpg" alt="Galaxy" width="300" height="300">
+                <h3>Galaxy</h3>
+                <p>Lleva hoy este nuevo equipo</p>
+                <p>Precio: $6,300,000</p>
+
+                <a href="@Url.Action("RegisterBuy", "Buy")" class="btn btn-primary">COMPRAR AHORA</a>
+
+                <p>
+                    ¡¡¡DATOS DEL CELULAR!!!
+                    La memoria interna real accesible para el usuario es menor que la memoria total especificada
+                    debido al almacenamiento del sistema operativo, el software utilizado para operar las funciones
+                    del dispositivo y otras aplicaciones integradas, y puede variar después de las actualizaciones /
+                    actualizaciones de software.
+                </p>
+                <p>
+
+                    Simple y elegante
+                    Enmarcado en líneas simples con acabado en Glastic, el Galaxy A34 5G está disponible muy modernos
+                    pero atemporales .
+                </p>
+                <div id="galaxy-details" class="product-details">
+                    <!-- Contenido de los detalles del producto -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="oferta">
+        <div class="container">
+            <h2>Ofertas Especiales CLIENTES PREMIUM</h2>
+
+            <div class="productos">
+                <div class="producto">
+                    <img src="~/Images/xiaomi.jpg" alt="Xiaomi" width="300" height="300">
+                    <h3>Xiaomi</h3>
+                    <p>Lleva hoy este nuevo equipo siendo cliente premium a tan solo</p>
+                    <p>Precio: $4,200,000</p>
+
+                    <a href="@Url.Action("RegisterBuy", "Buy")" class="btn btn-primary">COMPRAR AHORA</a>
+
+                    <p>
+                        ¡¡¡DATOS DEL CELULAR!!!
+                        Chip A15 Bionic GPU 5núcleos rendimiento fuera de serie
+                        Modo Cine 4K Dolby Vision de hasta 30cps
+                        Modo Acción para lograr videos estables
+                        Detección de Choques, funcionalidad de seguridad
+                        Ceramic Shield y resistencia al agua
+                    </p>
+                    <p>
+                        El iPhone 14 viene con el sistema de dos cámaras, para que tomes fotos espectaculares con mucha o poca luz.
+                        Y te da más tranquilidad gracias a una funcionalidad de seguridad que salva vidas.
+                    </p>
+                    <div id="xiaomi-details" class="product-details">
+                        <!-- Contenido de los detalles del producto -->
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="~/Images/xiaomiA.jpg" alt="XiaomiA" width="300" height="300">
+                    <h3>XiaomiA</h3>
+                    <p>Lleva hoy este nuevo equipo siendo cliente premium a tan solo</p>
+                    <p>Precio: $4,700,000</p>
+
+                    <a href="@Url.Action("RegisterBuy", "Buy")" class="btn btn-primary">COMPRAR AHORA</a>
+
+                    <p>
+                        ¡¡¡DATOS DEL CELULAR!!!
+                        Rodéate de sonido
+                        Una forma superior de escuchar. El audio envolvente Dolby Atmos permite que el Galaxy A34 5G convierta tus canciones,
+                        llamadas y contenido de video en experiencias de audio puras. Hazlo en un instante. Con la tecnología de un procesador
+                        de ocho núcleos y conectado en 5G, el Galaxy A34 5G inspira al máximo tu rendimiento en el trabajo o el juego. Mantén la
+                        capacidad con más espacio usando una memoria de 6 GB y almacenamiento de 128 GB, además de compatibilidad con una tarjeta
+                        microSD de hasta 1 Durabilidad para adentrarse en lo salvaje. La clasificación IP67 del Galaxy A34 5G certifica su resistencia
+                        al polvo y el agua para disfrutar de más aventuras.
+                    </p>
+                    <p>
+
+                        Simple y elegante
+                        Enmarcado en líneas simples con acabado en Glastic, el Galaxy A34 5G está disponible muy modernos pero atemporales .
+                    </p>
+                    <div id="xiaomia-details" class="product-details">
+                        <!-- Contenido de los detalles del producto -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta">
+        <a class="btn-shop btn-up" href="#top" role="button">Subir de Nuevo</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2023 Tienda de Celulares. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>

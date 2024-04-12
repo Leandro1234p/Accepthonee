@@ -1,0 +1,193 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+
+    <style>
+        /* Estilos generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FFD700, #FF4500);
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(322, 255, 249, 0.6); /* Fondo en negro con una opacidad del 90% */
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+            transition: all 0.3s; /* Agrega una transición suave */
+        }
+
+            .navbar li a {
+                text-decoration: none;
+                color: #333; /* Cambia el color de texto a un tono más oscuro */
+                font-size: 18px;
+                transition: color 0.3s; /* Cambia el color de texto con una transición */
+            }
+
+                .navbar li a:hover {
+                    color: #007bff; /* Cambia el color de texto al pasar el cursor */
+                }
+        /* Estilos para los cuadros de "Ir a" */
+        .goto-box {
+            background-color: #000; /* Cambio de color a negro */
+            border: 2px solid #000; /* Cambio de color a negro */
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #000; /* Texto en blanco */
+        }
+
+            .goto-box a {
+                text-decoration: none;
+                color: #FFF; /* Texto en blanco */
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+        /* Estilos para los títulos de productos */
+        .product-title {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #000; /* Color de título en negro */
+            text-align: center; /* Centramos el texto */
+        }
+
+        /* Estilos para los productos */
+        .product {
+            border: 1px solid #000; /* Cambio de color a negro */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #FFF; /* Fondo blanco */
+            text-align: center; /* Centramos el contenido */
+        }
+
+            .product img {
+                max-width: 70%;
+                display: block;
+                margin: 0 auto; /* Centramos la imagen */
+            }
+
+            .product p {
+                text-align: center; /* Centramos el texto */
+            }
+
+            .product a {
+                display: block;
+                margin: 10px auto; /* Centramos el botón */
+            }
+
+        .btn-view {
+            background-color: #000; /* Cambio de color a negro */
+            color: #FFF; /* Texto en blanco */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF4500;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px; /* Agregamos margen superior */
+        }
+
+        .btn-up {
+            background-color: #000; /* Cambio de color a negro */
+            color: #FFF; /* Texto en blanco */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #FFF; /* Cambio de fondo a blanco */
+            color: #000; /* Cambio del texto a negro */
+            border-top: 2px solid #FF4500;
+        }
+        .toolbar {
+            background-color: #333; /* Color de fondo de la barra de herramientas */
+            color: #FFF; /* Texto en blanco */
+            padding: 10px; /* Espaciado interior */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+        <h1>Acerca de Nosotros</h1>
+        <p>Descubre nuestra historia y nuestro compromiso con la calidad y la satisfacción del cliente.</p>
+    </header>
+
+    <section class="informacion-empresa">
+        <h2>Nuestra Historia</h2>
+        <p>
+            Somos una empresa apasionada por la tecnología. Fundada en el año 2023,
+            hemos estado en el negocio de la venta de teléfonos móviles y accesorios durante más de una década.
+            Desde nuestros modestos comienzos, hemos crecido y prosperado gracias a la lealtad de nuestros clientes y nuestro compromiso con la excelencia.
+        </p>
+    </section>
+
+    <section class="informacion-empresa">
+        <h2>Nuestra Misión</h2>
+        <p>
+            Nuestra misión es brindar productos y servicios de alta calidad a nuestros clientes.
+            Nos esforzamos por ofrecer los últimos modelos de teléfonos móviles y los accesorios más innovadores a precios competitivos.
+            La satisfacción del cliente es nuestra máxima prioridad y trabajamos arduamente para superar las expectativas de nuestros clientes.
+        </p>
+    </section>
+
+    <section class="informacion-empresa">
+        <h2>Nuestro Equipo</h2>
+        <p>
+            Detrás de nuestro éxito hay un equipo dedicado de profesionales apasionados por la tecnología.
+            Nuestros empleados están comprometidos con brindar el mejor servicio al cliente y mantenerse actualizados con las últimas tendencias tecnológicas.
+        </p>
+    </section>
+
+    <section class="informacion-empresa">
+        <h2>Contáctanos</h2>
+        <p>Si deseas saber más sobre nuestros productos o tienes alguna pregunta, no dudes en ponerte en contacto con nosotros. Estamos disponibles por 313-556-0587, Acceptfone@gmail.com y en nuestras tiendas físicas. ¡Esperamos atenderte pronto!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Acceptfone. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

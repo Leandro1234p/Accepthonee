@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a AcceptPhone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6200ea, #00c853); /* Fondo con degradado llamativo */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px; /* Aumenta el ancho del contenedor */
+            margin: 50px auto; /* Centra el contenedor en la página */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            color: #ccc; /* Color de texto más oscuro para mejorar la visibilidad */
+        }
+
+        .form-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 18px;
+                color: #e65100; /* Naranja oscuro para etiquetas */
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid #e65100;
+                border-radius: 8px;
+                font-size: 16px;
+                background-color: #fff3e0; /* Amarillo claro para el fondo de los campos de entrada */
+                color: #333;
+            }
+
+        .btn {
+            display: inline-block;
+            background-color: #e65100;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #ff7043; /* Naranja más claro al pasar el cursor */
+            }
+
+
+        .navbar {
+            background-color: #333; /* Fondo oscuro para la barra de navegación */
+            padding: 10px; /* Ajuste el espaciado según sus preferencias */
+        }
+
+            .navbar h1 {
+                color: #ccc; /* Texto blanco en la barra de navegación */
+            }
+
+            .navbar ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+            }
+
+            .navbar li {
+                margin-right: 20px;
+                transition: all 0.3s;
+            }
+
+                .navbar li a, .navbar h1 {
+                    text-decoration: none;
+                    color: #000; /* Cambiado a negro para el texto normal */
+                    font-size: 18px;
+                    transition: color 0.3s;
+                }
+
+                    .navbar li a:hover {
+                        color: #00c853;
+                    }
+
+        .banner {
+            text-align: center;
+            margin-top: 50px;
+            color: #e65100; /* Texto blanco en el banner */
+        }
+
+            .banner h1 {
+                font-size: 48px;
+                color: #00c853; /* Verde claro para el título grande y colorido en el banner */
+                margin-bottom: 20px;
+            }
+
+        .sub-header {
+            font-size: 24px;
+            color: #e65100; /* Naranja oscuro para el subtítulo en el banner */
+        }
+
+        .btn-shop {
+            background-color: #00c853;
+            border-color: #00c853;
+            color: #fff;
+            font-size: 24px;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 15px 20px;
+            transition: background-color 0.3s;
+        }
+
+            .btn-shop:hover {
+                background-color: #64dd17; /* Verde más claro al pasar el cursor */
+                border-color: #64dd17;
+            }
+
+        .btn-up {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .phones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .phone {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+            .phone:hover {
+                transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+            }
+
+            .phone img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px; /* Bordes redondeados para la imagen */
+            }
+
+            .phone h3 {
+                font-size: 24px;
+                color: #00c853;
+                margin-top: 15px;
+            }
+
+            .phone p {
+                font-size: 16px;
+                color: #555;
+            }
+
+            .phone .btn-view {
+                background-color: #00c853;
+                border-color: #00c853;
+                color: #fff;
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 15px 0;
+                display: block;
+                transition: background-color 0.3s;
+            }
+
+                .phone .btn-view:hover {
+                    background-color: #64dd17; /* Verde más claro al pasar el cursor */
+                    border-color: #64dd17;
+                }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff; /* Texto blanco en la sección de llamada a la acción */
+        }
+
+        footer {
+            background-color: #222; /* Fondo oscuro para el pie de página */
+            color: #ccc; /* Texto de color claro en el pie de página */
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Contenido de la barra de herramientas -->
+        <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+        <h1>¡¡Bienvenido a AcceptPhone!!</h1>
+
+
+        <div class="goto-box">
+            <a href="#ofertas">Ver Ofertas</a>
+        </div>
+
+        <div id="nuevos" class="section-title">Nuevos Modelos</div>
+        <div class="product">
+            <div class="product-title">Samsung Galaxy S22</div>
+            <img src="~/Images/Galaxy-S23.jpg" alt="Galaxy-S23">
+            <p>Disfruta de la mejor tecnología con este equipo.</p>
+            <div class="product-price">$4´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+
+        <div class="product">
+            <div class="product-title">Xiaomi A</div>
+            <img src="~/Images/xiaomi.jpg" alt="xiaomi">
+            <p>Explora un mundo de posibilidades con este teléfono elegante.</p>
+            <div class="product-price">$5´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+
+        <div class="product">
+            <div class="product-title">Iphone 14 pro max</div>
+            <img src="~/Images/Iphone.jpg" alt="Iphone">
+            <p>Lleva este nuevo modelo para compartir con tus amigos.</p>
+            <div class="product-price">$6´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+
+        <div class="product">
+            <div class="product-title">Xiaomi G4</div>
+            <img src="~/Images/xiaomiA.jpg" alt="Xiaomi"width="300" height="300">
+            <p>COMPRA ESTE EQUIPO PARA TUS FAMILIARES</p>
+            <div class="product-price">$2´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+
+        <div class="goto-box">
+            <a href="#nuevos">Ver Nuevos Modelos</a>
+        </div>
+
+        <div id="ofertas" class="section-title">Ofertas</div>
+        <div class="product">
+            <div class="product-title">Samsung</div>
+            <img src="~/Images/Samsung.jpg" alt="Samsung" width="300" height="300">
+            <p>ADQUIERE ESTE EQUIPO A UN SUPER DESCUENTO.</p>
+            <div class="product-price">$3´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+        <div class="product">
+            <div class="product-title">Iphone 14 pro max</div>
+            <img src="~/Images/Iphone.jpg" alt="Iphone">
+            <p>ADQUIERE ESTE EQUIPO A UN SUPER DESCUENTO</p>
+            <div class="product-price">$5´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+        <div class="product">
+            <div class="product-title">Xiaomi A</div>
+            <img src="~/Images/xiaomi.jpg" alt="xiaomi">
+            <p>ADQUIERE ESTE EQUIPO A UN SUPER DESCUENTO.</p>
+            <div class="product-price">$5´000.000</div>
+            <a class="btn-view" href="/Home/PhonesViews">Ver detalles</a>
+        </div>
+
+        <div class="cta">
+            <a class="btn-shop btn-up" href="#top" role="button">Subir de Nuevo</a>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 AcceptPhone. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

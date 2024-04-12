@@ -1,0 +1,236 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Empresa de Venta Digital</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+    <script>
+        @if (ViewBag.SuccessMessage != null)
+        {
+            <text>showSuccessMessage("@ViewBag.SuccessMessage");</text>
+        }
+
+        // Define la función showSuccessMessage
+        function showSuccessMessage(message) {
+            var messageDiv = document.getElementById("message");
+            messageDiv.style.display = "block";
+            messageDiv.style.color = "blue"; // Cambia el color a verde o el que desees
+            messageDiv.innerText = message;
+        }
+    </script>
+    <style>
+
+
+        /* Estilos generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FFD700, #FF4500);
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px; /* Agregamos espacio alrededor del contenido */
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+            transition: all 0.3s; /* Agrega una transición suave */
+        }
+
+            .navbar li a {
+                text-decoration: none;
+                color: #333; /* Cambia el color de texto a un tono más oscuro */
+                font-size: 18px;
+                transition: color 0.3s; /* Cambia el color de texto con una transición */
+            }
+
+                .navbar li a:hover {
+                    color: #007bff; /* Cambia el color de texto al pasar el cursor */
+                }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin: 20px 0; /* Agregamos margen superior e inferior */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(322, 255, 249, 0.6); /* Fondo en negro con una opacidad del 90% */
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 20px 0; /* Agregamos margen superior e inferior */
+            color: #000; /* Color de título en negro */
+            text-align: center; /* Centramos el texto */
+            border-bottom: 2px solid #000; /* Línea divisoria */
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 18px;
+                color: #FF4500; /* Cambia el color de las etiquetas a naranja oscuro */
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #FF4500; /* Cambia el borde de los campos de entrada a naranja oscuro */
+                border-radius: 5px;
+                font-size: 16px;
+                background-color: #FFF8DC; /* Cambia el fondo de los campos de entrada a un amarillo claro */
+            }
+
+        .btn {
+            display: inline-block;
+            background-color: #FF4500; /* Cambia el color del botón a naranja oscuro */
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer; /* Cambia el cursor al pasar el botón */
+        }
+
+            .btn:hover {
+                background-color: #FF6347; /* Cambia el color del botón al pasar el cursor */
+            }
+
+        body {
+            background-color: #f5f5f5; /* Color de fondo */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+             
+        /* Estilos de la sección de contacto */
+        .contact-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 18px;
+                color: #333;
+            }
+
+            .form-group input, .form-group textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+        /* Estilos del pie de página */
+       
+        .toolbar {
+            background-color: #333; /* Color de fondo de la barra de herramientas */
+            color: #FFF; /* Texto en blanco */
+            padding: 10px; /* Espaciado interior */
+        }
+    </style>
+</head>
+<body>
+    <header class="header-contacto">
+        <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+        <h1>NO OLVIDES QUE...</h1>
+        <p>¡Estamos aquí para ayudarte! Ponte en contacto con nosotros para cualquier consulta o asistencia.</p>
+    </header>
+
+    <section class="contacto">
+        <div class="container">
+            <div class="contacto">
+                <h2>¿DUDAS O SUGERENCIAS?</h2>
+                <p>¿Tienes preguntas o comentarios sobre nuestros servicios? ¡Escríbenos! Te responderemos muy pronto.</p>
+
+                <!-- Formulario de contacto -->
+                @using (Html.BeginForm("RegisterComent", "Coment", FormMethod.Post))
+                {
+                    //Html.AntiForgeryToken();
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Comentario</button>
+                    <div id="message" style="display: none;"></div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section class="informacion-contacto">
+        <h2>Información de la empresa</h2>
+        <p>
+            Somos tu destino para la última tecnología móvil. En AcceptPhone,
+            nos apasiona conectar a las personas con los dispositivos más avanzados y las mejores ofertas en teléfonos inteligentes.
+            Ofrecemos una amplia gama de marcas y modelos, desde los últimos lanzamientos hasta opciones asequibles.
+            Nuestra misión es proporcionarte la mejor experiencia en compras de dispositivos móviles, respaldada por un excelente
+            servicio al cliente. ¡Descubre la innovación en tus manos con AcceptPhone
+        </p>
+        <p>Puedes contactarnos a través de los siguientes medios:</p>
+        <ul>
+            <li>Teléfono: +57 313 556 0587</li>
+            <li>Correo Electrónico: AcceptfPhone</li>
+            <li>Dirección: Calle Principal #1, Bogotá, Colombia</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AcceptfPhone. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

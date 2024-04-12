@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Cerrar sesión", "Logout", "Account")
+    }
+    <title>Registrarse - Tienda de Celulares ACCEPTFONE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Estilos generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #FFD700, #FF4500);
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px; /* Agregamos espacio alrededor del contenido */
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+            transition: all 0.3s; /* Agrega una transición suave */
+        }
+
+            .navbar li a {
+                text-decoration: none;
+                color: #333; /* Cambia el color de texto a un tono más oscuro */
+                font-size: 18px;
+                transition: color 0.3s; /* Cambia el color de texto con una transición */
+            }
+
+                .navbar li a:hover {
+                    color: #007bff; /* Cambia el color de texto al pasar el cursor */
+                }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin: 20px 0; /* Agregamos margen superior e inferior */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(322, 255, 249, 0.6); /* Fondo en negro con una opacidad del 90% */
+            color: #000;
+            
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 100px;
+        }
+
+        .form-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+            .form-group label {
+                display: block;
+                font-size: 18px;
+                color: #FF4500; /* Cambia el color de las etiquetas a naranja oscuro */
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #FF4500; /* Cambia el borde de los campos de entrada a naranja oscuro */
+                border-radius: 5px;
+                font-size: 16px;
+                background-color: #FFF8DC; /* Cambia el fondo de los campos de entrada a un amarillo claro */
+            }
+
+        .btn {
+            display: inline-block;
+            background-color: #FF4500; /* Cambia el color del botón a naranja oscuro */
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer; /* Cambia el cursor al pasar el botón */
+        }
+
+            .btn:hover {
+                background-color: #FF6347; /* Cambia el color del botón al pasar el cursor */
+            }
+    </style>
+</head>
+<body>
+
+    @model AcceptPhone.Models.RegisterViewModel
+    @using System.Web.Mvc
+
+    @{
+        ViewBag.Title = "Registro";
+    }
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+       
+        <div style="border: 2px solid ; padding: 10px; border-radius: 5px; background-color:">
+            <h2 class="text-center">Registrate Aqui</h2>
+        </div>
+        <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Username, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">REGISTRARSE</button>
+            </div>
+        </div>
+
+        @section scripts
+            {
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+            <script>
+                document.getElementById('registrar').addEventListener('click', function () {
+                    var Username = $('#Username').val();
+                    var Email = $('#Email').val();
+                    var Password = $('#Password').val();
+                    var ConfirmPassword = $('#ConfirmPassword').val();
+                    var EmailRegex = /[a-z0-9._%+-]+[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+                    // Limpiar mensajes de error
+                    $('.field-validation-message').text('');
+
+                    if (Username === '' || Email === '' || Password === '' || ConfirmPassword === '') {
+                        $('#UsernameError').text("Por favor escriba su nombre.");
+                        $('#EmailError').text("Por favor escriba su correo.");
+                        $('#PasswordError').text("Por favor escriba su contraseña.");
+                        $('#ConfirmPasswordError').text("Por favor confirme su contraseña.");
+                    } else if (!/^[A-Za-z\s]*$/.test(Username)) {
+                        $('#UsernameError').text('El campo "Nombre" solo debe contener letras y espacios.');
+                    } else if (!EmailRegex.test(Email)) {
+                        $('#EmailError').text('El campo "email" debe estar con una dirección de correo válida.');
+                    } else if (Password !== ConfirmPassword) {
+                        $('#ConfirmPasswordError').text('Las contraseñas no coinciden.');
+                    } else {
+                        // Realizar otras validaciones si es necesario
+                        // Comprobar si hay mensajes de error
+                        mostrarConfirmacion();
+                    }
+                    if (ModelState.IsValid) {
+                        // Almacenar la contraseña proporcionada en una variable de sesión
+                        Session["UserPassword"] = model.Password;
+                        // Continuar con el proceso de registro
+                    }
+                });
+
+                function mostrarError(mensaje) {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Elementos vacíos ingrese datos solicitados en los campos',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                }
+
+                function mostrarConfirmación() {
+                    Swal.fire({
+                        title: 'Confirmación',
+                        text: '¿Deseas Registrarte con estos datos?',
+                        icon: 'ATENCIÓN',
+                        showCancelButton: true,
+                        confirmButtonText: 'Aceptar y Continuar',
+                        cancelButtonText: 'Cancelar',
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                    }).then((result) => {
+                        if (result.value) {
+                            $("form").submit();
+                        }
+
+                    });
+
+                }
+                document.getElementById('registrar').addEventListener('click', function () {
+            // ... (código de validación y otras acciones)
+
+            if (ModelState.IsValid) {
+                // Almacenar la contraseña proporcionada en una variable de sesión
+                Session["UserPassword"] = model.Password;
+                // Continuar con el proceso de registro
+            }
+
+            // Aquí colocas la condición para renderizar el enlace de registro
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <div class="navbar li">
+                    @Html.ActionLink("Registrarse", "Register", "Account")
+                </div>
+            }
+                });
+
+
+
+            </script>
+        }
+    }
+</body>
+</html>

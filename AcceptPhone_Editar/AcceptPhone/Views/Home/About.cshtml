@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #6200ea, #00c853);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #00c853; /* Verde claro para el título grande y colorido en el banner */
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 24px;
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        .informacion-empresa h2,
+        .informacion-empresa p {
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        .form-group label {
+            color: #333; /* Color de texto más oscuro */
+        }
+
+        .form-group input,
+        .form-group textarea {
+            color: #333; /* Color de texto para los campos de entrada */
+        }
+
+        .btn,
+        .btn-shop,
+        .btn-view {
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+
+            .navbar h1 {
+                color: #ccc;
+            }
+
+            .navbar ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+            }
+
+            .navbar li {
+                margin-right: 20px;
+                transition: all 0.3s;
+            }
+
+                .navbar li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 18px;
+                    transition: color 0.3s;
+                }
+
+                    .navbar li a:hover {
+                        color: #00c853;
+                    }
+
+                .navbar h1,
+                .navbar li a {
+                    color: #333; /* Color de texto más oscuro */
+                }
+
+        .banner {
+            color: #e65100; /* Texto blanco en el banner */
+        }
+
+        .sub-header {
+            color: #e65100; /* Naranja oscuro para el subtítulo en el banner */
+        }
+
+        footer {
+            color: #ccc; /* Texto de color claro en el pie de página */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+        <h1>Acerca de Nosotros</h1>
+        <p>Descubre nuestra historia y nuestro compromiso con la calidad y la satisfacción del cliente.</p>
+    </header>
+
+    <section class="informacion-empresa">
+        <h2>Nuestra Historia</h2>
+        <p>
+            Somos una empresa apasionada por la tecnología. Fundada en el año 2023,
+            hemos estado en el negocio de la venta de teléfonos móviles y accesorios durante más de una década.
+            Desde nuestros modestos comienzos, hemos crecido y prosperado gracias a la lealtad de nuestros clientes y nuestro compromiso con la excelencia.
+        </p>
+    </section>
+
+    <section class="informacion-empresa">
+        <h2>Nuestra Misión</h2>
+        <p>
+            Nuestra misión es brindar productos y servicios de alta calidad a nuestros clientes.
+            Nos esforzamos por ofrecer los últimos modelos de teléfonos móviles y los accesorios más innovadores a precios competitivos.
+            La satisfacción del cliente es nuestra máxima prioridad y trabajamos arduamente para superar las expectativas de nuestros clientes.
+        </p>
+    </section>
+
+    <section class="informacion-empresa">
+        <h2>Nuestro Equipo</h2>
+        <p>
+            Detrás de nuestro éxito hay un equipo dedicado de profesionales apasionados por la tecnología.
+            Nuestros empleados están comprometidos con brindar el mejor servicio al cliente y mantenerse actualizados con las últimas tendencias tecnológicas.
+        </p>
+    </section>
+
+    <section class="informacion-empresa">
+        <h2>Contáctanos</h2>
+        <p>Si deseas saber más sobre nuestros productos o tienes alguna pregunta, no dudes en ponerte en contacto con nosotros. Estamos disponibles por 313-556-0587, Acceptfone@gmail.com y en nuestras tiendas físicas. ¡Esperamos atenderte pronto!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Acceptfone. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

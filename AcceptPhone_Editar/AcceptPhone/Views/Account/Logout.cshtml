@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Cerrar Sesión";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Has cerrado sesión exitosamente</h2>
+    <p>¡Hasta luego! Gracias por usar nuestro sitio.</p>
+    <img src="~/Images/AcceptPhone_Logo.jpg" alt="Logo de AcceptPhone" style="display: block; margin: 0 auto; max-width: 200px; height: auto;">
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p>Usuario actual: @User.Identity.Name</p>
+    }
+
+    @using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger">Cerrar Sesión</button>
+    }
+</div>
