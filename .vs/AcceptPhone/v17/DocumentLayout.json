@@ -1,15 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Desktop\\AcephoneBase\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|c:\\users\\usuario\\desktop\\acceptphone_final\\acceptphone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\css\\indexstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\css\\indexstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
-      "VerticalTabListWidth": 121,
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,16 +34,53 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexStyle.css",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\css\\IndexStyle.css",
+              "RelativeDocumentMoniker": "AcceptPhone\\css\\IndexStyle.css",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\css\\IndexStyle.css",
+              "RelativeToolTip": "AcceptPhone\\css\\IndexStyle.css",
+              "ViewState": "AQIAANwAAAAAAAAAAAAowP8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-25T04:31:10.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T04:27:14.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T04:26:45.183Z"
             }
           ]
         },
         {
-          "DockedWidth": 292,
+          "DockedHeight": 268,
           "SelectedChildIndex": -1,
           "Children": [
             {
