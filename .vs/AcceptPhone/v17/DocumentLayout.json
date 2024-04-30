@@ -3,26 +3,130 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|c:\\users\\usuario\\desktop\\acceptphone_final\\acceptphone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|c:\\users\\usuario\\desktop\\acceptphone_final\\acceptphone\\views\\home\\phonesviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\phonesviews.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|c:\\users\\usuario\\desktop\\acceptphone_final\\acceptphone\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\donacion\\verdonaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\donacion\\verdonaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\donacion\\donacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\donacion\\donacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\welcomeadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\welcomeadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\buy\\registerbuy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\buy\\registerbuy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\home\\acercade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\acercade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\admin\\editarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\admin\\editarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\listarusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\listarusuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\account\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\account\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\css\\indexstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\css\\indexstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\models\\phoneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\models\\phoneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\controllers\\donacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\controllers\\donacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\models\\donacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\models\\donacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\acceptphone\\models\\acceptphonecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32749940-1F51-4E13-885D-E375A988955D}|AcceptPhone\\AcceptPhone.csproj|solutionrelative:acceptphone\\models\\acceptphonecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 243,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,46 +146,347 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IndexStyle.css",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\css\\IndexStyle.css",
-              "RelativeDocumentMoniker": "AcceptPhone\\css\\IndexStyle.css",
-              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\css\\IndexStyle.css",
-              "RelativeToolTip": "AcceptPhone\\css\\IndexStyle.css",
-              "ViewState": "AQIAANwAAAAAAAAAAAAowP8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-25T04:31:10.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "AcceptPhone\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "AcceptPhone\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA3AAAA",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAgwKMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T04:27:14.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T22:03:58.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "AcceptPhone\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:16:58.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAACcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T19:25:45.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAACEBAAAAAAAAAAAgwEIBAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T02:23:20.531Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AcceptPhone\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:22:49.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AcceptPhone\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "AcceptPhone\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAgwK8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T04:26:45.183Z"
+              "WhenOpened": "2024-04-29T04:18:15.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerDonaciones.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Donacion\\VerDonaciones.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Donacion\\VerDonaciones.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Donacion\\VerDonaciones.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Donacion\\VerDonaciones.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T03:59:44.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Donacion.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Donacion\\Donacion.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Donacion\\Donacion.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Donacion\\Donacion.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Donacion\\Donacion.cshtml",
+              "ViewState": "AQIAAB4BAAAAAAAAAEBVwDQBAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T18:10:48.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterBuy.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Buy\\RegisterBuy.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Buy\\RegisterBuy.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Buy\\RegisterBuy.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Buy\\RegisterBuy.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAAFEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T02:42:31.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WelcomeAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\WelcomeAdmin.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\WelcomeAdmin.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\WelcomeAdmin.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\WelcomeAdmin.cshtml",
+              "ViewState": "AQIAAP4AAAAAAAAAAEBVwBUBAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T19:25:33.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Welcome.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Welcome.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\Welcome.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Welcome.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\Welcome.cshtml",
+              "ViewState": "AQIAAAEBAAAAAAAAAAAQwBoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T04:55:32.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AcercaDe.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\AcercaDe.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Home\\AcercaDe.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\AcercaDe.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Home\\AcercaDe.cshtml",
+              "ViewState": "AQIAAMYAAAAAAAAAAIBJwNcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T19:32:49.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAABUBAAAAAAAAAEBVwCwBAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T22:22:47.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Admin\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Admin\\AdminDashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T05:34:04.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditarUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Admin\\EditarUsuario.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Admin\\EditarUsuario.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Admin\\EditarUsuario.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Admin\\EditarUsuario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T05:34:04.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Logout.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\Logout.cshtml",
+              "ViewState": "AQIAAAABAAAAAAAAAAAAwBkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T04:55:47.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListarUsuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\ListarUsuarios.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\ListarUsuarios.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\ListarUsuarios.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\ListarUsuarios.cshtml",
+              "ViewState": "AQIAAAABAAAAAAAAAAAQwBkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T19:25:49.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Account\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Account\\Confirmation.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Account\\Confirmation.cshtml",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAAwB4BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T05:03:38.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAACUBAAAAAAAAAAAQwDABAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T19:18:48.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PhoneViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\PhoneViewModel.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Models\\PhoneViewModel.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\PhoneViewModel.cs",
+              "RelativeToolTip": "AcceptPhone\\Models\\PhoneViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:17:00.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IndexStyle.css",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\css\\IndexStyle.css",
+              "RelativeDocumentMoniker": "AcceptPhone\\css\\IndexStyle.css",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\css\\IndexStyle.css",
+              "RelativeToolTip": "AcceptPhone\\css\\IndexStyle.css",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAAAHsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-29T21:54:25.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "AcceptPhone\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:59:14.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Donacion.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\Donacion.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Models\\Donacion.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\Donacion.cs",
+              "RelativeToolTip": "AcceptPhone\\Models\\Donacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:32:50.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DonacionController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Controllers\\DonacionController.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Controllers\\DonacionController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Controllers\\DonacionController.cs",
+              "RelativeToolTip": "AcceptPhone\\Controllers\\DonacionController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAqwAcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:22:35.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IdentityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\App_Start\\IdentityConfig.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\App_Start\\IdentityConfig.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\App_Start\\IdentityConfig.cs",
+              "RelativeToolTip": "AcceptPhone\\App_Start\\IdentityConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T05:21:23.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AcceptPhone\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:20:02.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Web.config",
+              "RelativeDocumentMoniker": "AcceptPhone\\Web.config",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Web.config",
+              "RelativeToolTip": "AcceptPhone\\Web.config",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-28T18:25:09.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AcceptPhoneContext.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\AcceptPhoneContext.cs",
+              "RelativeDocumentMoniker": "AcceptPhone\\Models\\AcceptPhoneContext.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Models\\AcceptPhoneContext.cs",
+              "RelativeToolTip": "AcceptPhone\\Models\\AcceptPhoneContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:16:52.224Z"
             }
           ]
         },
         {
-          "DockedHeight": 268,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 157,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,6 +495,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhonesViews.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\PhonesViews.cshtml",
+              "RelativeDocumentMoniker": "AcceptPhone\\Views\\Home\\PhonesViews.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\AcceptPhone_Final\\AcceptPhone\\Views\\Home\\PhonesViews.cshtml",
+              "RelativeToolTip": "AcceptPhone\\Views\\Home\\PhonesViews.cshtml",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAAAGEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T19:28:52.751Z",
+              "EditorCaption": ""
             }
           ]
         }
